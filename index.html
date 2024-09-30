@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://localhost/test.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./index_files/main.css">
+    <link rel="icon" type="image/x-icon" href="http://localhost/flower.ico">
+    <title>The Beauty of Ayra</title>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal-caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        .modal-content, .modal-caption {  
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {transform: scale(0)} 
+            to {transform: scale(1)}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./index_files/1.jpg" onclick="openModal(this.src)">
+        <img src="./index_files/2.jpg" onclick="openModal(this.src)">
+        <img src="./index_files/3.jpg" onclick="openModal(this.src)">
+        <img src="./index_files/4.jpg" onclick="openModal(this.src)">
+        <img src="./index_files/5.jpg" onclick="openModal(this.src)">
+    </div>
+    <div class="container1">   
+        <div class="letter">
+            <h1>
+                Loe baby q i love you so much!!
+            </h1>
+        </div>
+        <div class="rose">
+            <div class="flower">    
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <div class="Leaf">
+                <div class="stem"></div>
+                <div class="leafs"></div>
+                <div class="leafs"></div>
+            </div>
+        </div>
+    </div>
+    <div class="audio-player">
+    <audio controls="" style="
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 349px;
+        opacity: 0;
+    ">
+        <source src="u r the 1.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="img01">
+        <div class="modal-caption" id="caption"></div>
+    </div>
+
+    <script src="./index_files/main.js.download"></script>
+
+
+</div></body></html>
